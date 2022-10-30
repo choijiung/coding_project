@@ -1,4 +1,5 @@
 from random import *
+import streamlit as st
 one = 0
 two = 0
 thr = 0
@@ -10,8 +11,8 @@ eig = 0
 nin = 0
 
 
-for i in range(1, 10000):
-    random = str(randrange(1, 10000))
+for i in range(99):
+    random = str(randrange(99))
     rcut = str(random[:1])
     if rcut == "1":
         one += 1
@@ -31,6 +32,9 @@ for i in range(1, 10000):
         eig += 1
     else:
         nin += 1
+numchart = [one, two, thr, fou, fiv, six, sev, eig, nin]
+st.write("# 밴포드의 법칙 ")
+st.bar_chart(numchart)
 # print("1 : ", one)
 # print("2 : ", two)
 # print("3 : ", thr)
@@ -41,31 +45,31 @@ for i in range(1, 10000):
 # print("8 : ", eig)
 # print("9 : ", nin)
 
-def chart(num):
-    global bar
-    if num < 800:
-        bar = "|"
-    elif num < 850:
-        bar = "||"
-    elif num < 900:
-        bar = "|||"
-    elif num < 1000:
-        bar = "||||"
-    elif num < 1110:
-        bar = "|||||"
-    elif num < 1120:
-        bar = "||||||"
-    elif num < 1130:
-        bar = "|||||||"
-    elif num < 1140:
-        bar = "||||||||"
-    print(bar)
-chart(one)
-chart(two)
-chart(thr)
-chart(fou)
-chart(fiv)
-chart(six)
-chart(sev)
-chart(eig)
-chart(nin)
+# def chart(num):
+#     global bar
+#     if num < 1000:
+#         bar = "|"
+#     elif num < 1100:
+#         bar = "||"
+#     elif num < 1200:
+#         bar = "|||"
+#     elif num < 1300:
+#         bar = "||||"
+#     elif num < 1400:
+#         bar = "|||||"
+#     elif num < 1500:
+#         bar = "||||||"
+#     elif num < 1600:
+#         bar = "|||||||"
+#     elif num < 1700:
+#         bar = "||||||||"
+#     print(bar)
+# chart(one)
+# chart(two)
+# chart(thr)
+# chart(fou)
+# chart(fiv)
+# chart(six)
+# chart(sev)
+# chart(eig)
+# chart(nin)
