@@ -1,8 +1,6 @@
 from random import *
 import random
 
-from validators import card_number
-
 Car_count = 0
 Goat_count = 0
 All_count = 0
@@ -25,7 +23,7 @@ for i in range(10000):
     door3 = 3 in door
     if door1 == True:
         door_change = door[1]
-    elif door2== True:
+    elif door2 == True:
         door_change = door[2]
     elif door3 == True:
         door_change = door[3]
