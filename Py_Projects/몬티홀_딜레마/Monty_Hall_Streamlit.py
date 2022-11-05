@@ -45,7 +45,7 @@ def test():
 
 tab1, tab2 = st.tabs(["테스트", "코드보기"])
 with tab1:
-    image = Image.open("/Users/Jiung/coding/Py_Projects/몬티홀_딜레마/Monty_Hall_site_Image.png")
+    image = Image.open("Py_Projects/몬티홀_딜레마/Monty_Hall_site_Image.png")
     st.header("몬티홀 딜레마 테스트 사이트")
     st.image(image, caption='몬티홀 딜레마')
     button = st.button("테스트 해보기")
@@ -54,6 +54,6 @@ with tab1:
     else:
         st.write("버튼을 눌러보세요")
 with tab2:
-    image2 = Image.open("/Users/Jiung/coding/Py_Projects/몬티홀_딜레마/monty hall.png")
+    image2 = Image.open("Py_Projects/몬티홀_딜레마/monty hall.png")
     st.header("코드보기")
     st.image(image2, caption="코드")
